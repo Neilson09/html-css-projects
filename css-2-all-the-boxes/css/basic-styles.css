@@ -1,0 +1,102 @@
+body {
+    background-image: url("../assets/box-cat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    font-size: 20px;
+    color: #8C4771;
+    margin-left: 10px;
+    text-shadow: 6px 4px 4px rgba(89,25,59,0.6)
+}
+
+.container {
+    width: 600px;
+    height: 175px;
+    animation: color-change-2x; 
+    animation: color-change-2x 2s linear infinite alternate both;
+    border: 8px;
+    border-color: #8C4771;
+    border-style: groove;
+    border-radius: 0%;
+    padding-top: 10px;
+}
+
+/*select all squares in the array*/
+
+.container .squares:nth-child(-n+4) {
+    background-size: contain;
+    color: rgb(13,64,0);
+    float: left; 
+    width: 125px;
+    height: 125px;
+    margin: 9px;
+    border: 3px solid #0D4000;
+    border-radius: 0%;
+    cursor: pointer;
+    transition: transform .6s ease-in-out;
+}
+
+/*select all squares paragraphs in the array*/
+
+.squares:nth-child(-n+4) p{
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    font-size: 1em;
+    font-weight: 1000;
+    text-align: right;
+    margin: 0;
+}
+
+/*individually select a square in the array*/
+
+.squares:nth-child(1) {
+    background-image: url("../assets/1sheep.jpg");
+}
+
+.squares:nth-child(2) {
+    background-image: url("../assets/2dog.jpg");
+}
+
+.squares:nth-child(3) {
+    background-image: url("../assets/3hamster.JPG");
+}
+
+.squares:nth-child(4) {
+    background-image: url("../assets/4cat.jpg");
+    contain
+}
+
+/* hover, translate, & transform effects */
+
+.container .squares:nth-child(-n+4):hover {
+    transform: rotate(360deg) scale(.5);
+}
+
+.squares:nth-child(1):hover {
+    background-image: url("../assets/1hover.jpg");
+}
+
+.squares:nth-child(2):hover {
+    background-image: url("../assets/2hover.jpg");
+}
+
+.squares:nth-child(3):hover {
+    background-image: url("../assets/3hover.JPG");
+}
+
+.squares:nth-child(4):hover {
+    background-image: url("../assets/4hover.jpg");
+}
+
+/* animation effect */
+
+  @keyframes color-change-2x {
+    0% {
+      background: rgba(25,220,234,.5);
+    }
+    100% {
+      background: rgba(178,44,255,.5);
+    }
+  }
