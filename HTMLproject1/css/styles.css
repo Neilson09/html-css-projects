@@ -21,12 +21,61 @@ html {
 }
 
 body {
+    background-position: center;
+    background: url(../assets/thumbnails/life-in-space.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; 
     font-size: 14px;
     margin: 0;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
+}
+
+/**********
+    NAV
+**********/
+
+.menu {
+    /*color: #A12D06;*/
+    font: bold 12px/18px sans-serif;
+    /*text-align: center;*/
+    /*display: inline;*/
+    margin: 0%;
+    padding: 0;
+    /*list-style: none;*/
+    text-decoration: none;
+}
+
+.menu li {
+    color: #29102E;
+    background-color: rgba(255,255,255,1);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9d9fa2;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,.5);
+    border-radius: 6px; 
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu li:hover {
+    color: #730202;
+    background: linear-gradient(rgba(161,45,6,.5), rgba(253,238,167,.5));
 }
 
 footer, 
@@ -42,10 +91,10 @@ h1 {
     line-height: 50px;
     font-weight: 900;
     font-size: 30px;
-    text-transform: uppercase;
+    font-variant: small-caps;
     text-align: center;
-    color: #e91c1c;
-    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+    color: #730202;
+    text-shadow: 5px 3px 5px rgba(64,1,1,.5);
 }
 
 /*underline*/
@@ -64,18 +113,13 @@ h2 {
     color: #e91c1c;
 }
 
-h3 {
-    line-height: 30px;
-    padding-bottom: 20px;
-}
-
-h4 {
+/*h4 {
     padding-top: 25px;
     line-height: 40px;
     padding-bottom: 0px;
     font-size: 22px;
     font-weight: 900;
-}
+}*/
 
 p {
     font-weight: 300;
@@ -154,22 +198,11 @@ section {
 /***********
     HOME
 ************/
-#home {
-    background: url(../assets/thumbnails/life-in-space.jpg);
-    opacity: .4;
-    background-attachment: fixed;
-    -webkit-background-size: fixed;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /*background-repeat: no-repeat;*/
-    width: 100%;
-    display: block;
-    height: auto;
-    padding-top: 350px; /*spacer before main title logo*/
-    padding-bottom: 500px; /*spacer after main title logo*/
-    color: #fff;
-}
+/*#home 
+This was never called - clean up index.html
+*/
+
+
 
 .head-main {
 	text-shadow: 2px 4px 5px rgba(0,0,0,.9);
@@ -210,94 +243,104 @@ section {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100,65,0,.3);
+    background: linear-gradient(rgba(161,45,6,.5), rgba(253,238,167,1));
 }
 
 .flex-container:hover {
     box-shadow: 5px 4px 10px 0 rgba(0,0,0,.5);
 }
-
+/*
 #contact {
     background-color: #f5f3f3;
-}
+    /*rgba(253,238,167,.15); for box around reservation
+    padding? margin? wtf is it? */
 
 .reservation {
-    width: 60%;
+    width: 80%;
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100,65,0,.3);
     box-shadow: -1px -1px 1px 0 rgba(0,0,0,.1),
                 1px 2px 10px 0 rgba(0,0,0,.5);
     
 }
 
 .reservation h2 {
-    width: 70%;
+    /*width: 90%;*/
     text-align: center;
-    margin: 0 auto;
-    color: #13161B;
-    font-weight: 500;
-    font-size: 1.3em;
-    letter-spacing: 0pt;
-    word-spacing: 0pt;
-}
-
-.reservation h2 span {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    color: #13161B;
+    /*padding-bottom: 0px;*/
+    color: #29102e;
     font-weight: 900;
     font-size: 1.5em;
     font-variant: small-caps;
     letter-spacing: .4pt;
-    word-spacing: .3pt;
+    line-height: 1.25;
+    /*word-spacing: .0pt;*/
+}
+
+.reservation h3 {
+    /*width: 80%;*/
+    text-align: center;
+    /*padding-top: 0px;*/
+    color: #29102e;
+    font-weight: 600;
+    font-size: 1.25em;
+    font-variant: small-caps;
 }
 
 .reservation p {
-    color: #13161B;
-    width: 50%;
-    margin: 0 auto;
+    /*width: 98%;*/
+    font-size: 12px;
+    text-align: center;
+    color: #29102e;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.25;
 }
 
 .reservation form {
-    font-size: 15px;
+    font-size: 1px;
     outline: none;
     font-weight: 600;
-    color: #8d8e8f;
-    padding: 12px 12px;
-    width: 70%;
-    border: 1px solid #808080;
+    /*color: #29102e;
+    /*color: #8d8e8f;*/
+    padding: 2px 2px;
+    width: 85%;
+    /*border: 1px solid #808080;*/
+    border: 1px solid;
     margin: 2% auto;
     border-radius: 7px;
-    background: rgb(227,222,222);
-    box-shadow: 2px 3px 3px 0px rgba(0,0,0,.3);
+    background: rgba(256,256,256,.1);
+    /*background: rgb(227,222,222);*/
+    box-shadow: 4px 6px 6px 0px rgba(0,0,0,.6);
     font-family: 'Raleway', sans-serif;
 }
 
 .reservation input[type="text"] {
-    font-size: 15px;
+    font-size: 12px;
     outline: none;
     font-weight: 600;
-    color: #8d8e8f;
+    color: #730202;
     padding: 2% 1% 2% 7%;
     width: 80%;
     border-top: 1px solid #090b0d;
     border-right: 2px solid #424549;
     border-bottom: 2px solid #424549;
     border-left: 1px solid #090b0d;
+    /*border-top: 1px solid rgb(161,45,6);
+    border-right: 2px solid rgb(253,238,167);
+    border-bottom: 2px solid rgb(253,238,167);
+    border-left: 1px solid rgb(161,45,6);*/
     margin: 10px 1em;
     border-radius: 7px;
-    background: #13161b;
-    box-shadow: inset 0px 3px 0px rgba(5,5,5,.15);
+    background: rgba(253,238,167,.0);
+    box-shadow: inset 0px 3px 0px rgba(161,45,6,.15);
     font-family: 'Raleway', sans-serif;
 }
 
 .reservation input[type="text"]:hover {
-    box-shadow: 0 0 18px rgba(100,65,0,.8);
+    box-shadow: 0 0 18px rgba(161,45,6,.5);
 }
 
 .form-spacer {
@@ -309,22 +352,23 @@ section {
     padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
-    color: #000;
+    color: #29102e;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     position: relative;
-    display: inline;
     float: right;
+    /*display: inline;
+    /*float: right; per linter, this is ignored because "display: inline" overrides it, and width, height, margin-top, margin-bottom and float properties have no effect."*/
 }
 
 .terms:hover {
-    color: orange;
+    color: #730202;
     text-decoration: underline;
 }
 
 .submit input[type="submit"] {
-    color: rgb(225,225,225);
+    color: #29102e;
     cursor: pointer;
     border: none;
     font-weight: 900;
@@ -336,20 +380,15 @@ section {
     width: 25%;
     font-size: 18px;
     transition: border-color 0.3s color 0.3s background-color 0.3s;
-    /*step 75 video, 3:30ish, transition isn't doing for me what
-        it does in the demo - figure it out before changing it
-        - need to know this kinda stuff. Worth taking notes?
-        The font doesn't look right, either - don't think I have Raleway,
-        but seems like I had it working in a prior tutorial...*/
     border-radius: 7px;
-    background-color: #797a7b;
+    background-color: #918D9E;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
 }
 
 .submit input[type="submit"]:hover {
-    color: #000;
-    background-color: #8d8e8f;
-    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,.5);
+    color: #730202;
+    background-color: #e0bba0;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,.2);
 }
 
 /*************
@@ -362,4 +401,3 @@ section {
     padding: 20px 50px 20px 50px; /*same as only 1st and 2nd?*/
     text-align: right;
 }
-

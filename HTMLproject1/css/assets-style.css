@@ -1,4 +1,6 @@
-/*GALLERY SECTION ANIMATION*/
+/*************************
+    GALLERY & BROCURES
+**************************/
 
 p {
     font-weight: 300;
@@ -71,7 +73,7 @@ p {
 }
 
 .photo-overlay {
-    color: #fff;
+    /*.color: #fff;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -80,11 +82,11 @@ p {
     padding-left: 20px;
     padding-right: 20px;
     justify-content: center; /*For centering text inside .photo...*/
-    align-items: center;
+    /*align-items: center;
+    Not clear why this isn't working now. It was fine earlier...*/
     background: rgba(0,0,0,0.5);
 }
 
-/* in demo, he named this "white-head"*/
 .first-H3 {
     color: #C9BDAA;
     margin-top: 5%;
@@ -92,13 +94,13 @@ p {
     padding-bottom: 20px;*/
 }
 
-/*****************************************
-    PHOTO & POSTER OVERLAY TRANSITIONS
-*****************************************/
+/***************************
+    OVERLAY TRANSITIONS
+****************************/
 
 .poster-overlay,
 .photo-overlay {
-    opacity: 0;
+    opacity: 1;
     transition: opacity .1s;
     border-radius: 10px;
     cursor: pointer;
@@ -126,20 +128,3 @@ p {
     height: 100%;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
