@@ -21,18 +21,6 @@ html {
 }
 
 body {
-    background-position: center;
-    background: url(../assets/thumbnails/life-in-space.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: fixed;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: block;
-    height: auto;
-    padding-top: 350px; 
     font-size: 14px;
     margin: 0;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -75,7 +63,7 @@ body {
 
 .menu li:hover {
     color: #730202;
-    background: linear-gradient(rgba(161,45,6,.5), rgba(253,238,167,.5));
+    background: linear-gradient(rgba(161,45,6,1), rgba(253,238,167,1));
 }
 
 footer, 
@@ -94,7 +82,7 @@ h1 {
     font-variant: small-caps;
     text-align: center;
     color: #730202;
-    text-shadow: 5px 3px 5px rgba(64,1,1,.5);
+    text-shadow: 5px 3px 5px rgba(64,1,1,.7);
 }
 
 /*underline*/
@@ -198,11 +186,22 @@ section {
 /***********
     HOME
 ************/
-/*#home 
-This was never called - clean up index.html
-*/
-
-
+#home {
+    background: url(../assets/thumbnails/life-in-space.jpg);
+    opacity: 1;
+    background-attachment: fixed;
+    -webkit-background-size: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /*spacer before main title logo*/
+    padding-bottom: 500px; /*spacer after main title logo*/
+    color: #fff;
+}
 
 .head-main {
 	text-shadow: 2px 4px 5px rgba(0,0,0,.9);
