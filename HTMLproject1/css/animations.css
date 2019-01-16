@@ -24,7 +24,8 @@
     /*background-color: *052136;*/
     cursor: pointer;
     transition-property: background;
-    transition-duration: 0s;
+    transition-duration: .4s;
+    transition-delay: 0s;
     transition-timing-function: ease-in-out;
 }
 

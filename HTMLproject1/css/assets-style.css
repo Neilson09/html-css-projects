@@ -46,14 +46,14 @@ p {
 .poster-container {
     text-align: center;
     margin: 15px auto;
-    width:310px;
-    height: 400px;
+    width:225px;
+    height: 300px;
 }
 
 .poster-container img {
-    max-height: 100%;
-    width: 310px;
-    height: 400px;
+    max-width: 100%;
+    width: 225px;
+    height: 300px;
 }
 
 .poster-overlay {
@@ -88,12 +88,13 @@ p {
 .first-H3 {
     color: #C9BDAA;
     margin-top: 5%;
-    line-height: 30px;
-    padding-bottom: 20px;
+    /*line-height: 30px;
+    padding-bottom: 20px;*/
 }
 
-/*photo overlay transition
-in demo, he refers to these are 'animation-type effects'*/
+/*****************************************
+    PHOTO & POSTER OVERLAY TRANSITIONS
+*****************************************/
 
 .poster-overlay,
 .photo-overlay {
@@ -101,13 +102,6 @@ in demo, he refers to these are 'animation-type effects'*/
     transition: opacity .1s;
     border-radius: 10px;
     cursor: pointer;
-}
-
-.poster-overlay,
-.photo-overlay p {
-    width: 100%;
-    height: 100%;
-    color: #fff;
 }
 
 .poster-overlay:hover,
@@ -126,6 +120,12 @@ in demo, he refers to these are 'animation-type effects'*/
     transform: scale(1.1);
 }
 
+.poster-overlay,
+.photo-overlay p {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
 
 
 
