@@ -59,16 +59,16 @@ p {
 }
 
 .poster-overlay {
-    color: #fff;
+    /*.color: #fff;*/
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
     justify-content: center; /*For centering text inside .photo...*/
-    align-items: center;
+    /*align-items: center;*/
     background: rgba(0,0,0,0,.5);
 }
 
@@ -87,11 +87,19 @@ p {
     background: rgba(0,0,0,.5);
 }
 
-.first-H3 {
-    color: #C9BDAA;
+.photo-container H3 {
+    color: rgba(253,238,167,1);
+
     margin-top: 5%;
-    /*line-height: 30px;
-    padding-bottom: 20px;*/
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.poster-container H3 {
+    color: rgba(253,238,167,1);/***CHANGE TO MATCH PURPLE OF MENU & RSPV****/
+    margin-top: 15%;
+    line-height: 30px;
+    padding-bottom: 10px;
 }
 
 /***************************
@@ -103,11 +111,15 @@ p {
     opacity: 0;
     transition: opacity .1s;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+.poster-overlay {
+    background-color: rgba(201,189,170,.7);
 }
 
 .poster-overlay:hover,
-.photo-overlay:hover {
+.poster-overlay:hover {
     opacity: 1;
 }
 
@@ -122,9 +134,16 @@ p {
     transform: scale(1.1);
 }
 
-.poster-overlay,
 .photo-overlay p {
     width: 100%;
     height: 100%;
     color: #fff;
+}
+
+.poster-overlay p {
+    width: 100%;
+    height: 100%;
+    color: #514d57;
+    font-weight: 1000;
+    margin-top: 10%;
 }
