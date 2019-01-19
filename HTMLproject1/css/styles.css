@@ -1,14 +1,5 @@
-/*The tutorial references css files, named "shared.css" 
-and "animations.css". I had already started my styles.css,
-and it sounds like that will match his "shared.css". 
-I followed along with the photo css video and named 
-that file "photo-styles.css", but looks like that's his
-animations file. Guessing it's probably better to make 
-a 3rd file for animations, but will see how it works when 
-I get there */
 
 /**********************************************
-IMPORTANT:
 SAVE THIS FILE AS A TEMPLATE
 ***********************************************/
 
@@ -26,7 +17,7 @@ body {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff;
+    background-color: rgba(21,30,38,1);
 }
 
 /**********
@@ -34,19 +25,16 @@ body {
 **********/
 
 .menu {
-    /*color: #A12D06;*/
-    font: bold 12px/18px sans-serif;
-    /*text-align: center;*/
-    /*display: inline;*/
+    font-weight: 700;
     margin: 0%;
     padding: 0;
-    /*list-style: none;*/
+    list-style: none;
     text-decoration: none;
 }
 
 .menu li {
     color: #29102E;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(145,141,158,1);
     display: inline-block;
     margin: 0% auto;
     position: relative;
@@ -62,8 +50,8 @@ body {
 }
 
 .menu li:hover {
-    color: #730202;
-    background: linear-gradient(rgba(161,45,6,1), rgba(253,238,167,1));
+    color: #001A2F;
+    background: linear-gradient(rgba(145,141,158,.8), rgba(253,245,209,.8))
 }
 
 footer, 
@@ -81,8 +69,9 @@ h1 {
     font-size: 30px;
     font-variant: small-caps;
     text-align: center;
-    color: #730202;
-    text-shadow: 5px 3px 5px rgba(64,1,1,.7);
+    letter-spacing: 1pt;
+    color: rgba(145,141,158,1);
+    text-shadow: 3px 2px 20px rgba(253,245,209,.5);
 }
 
 /*underline*/
@@ -96,19 +85,6 @@ h1:after {
     box-shadow: 5px 2px 3px rgba(0,0,0,.5);
 }
 
-h2 {
-    line-height: 50px;
-    color: #e91c1c;
-}
-
-/*h4 {
-    padding-top: 25px;
-    line-height: 40px;
-    padding-bottom: 0px;
-    font-size: 22px;
-    font-weight: 900;
-}*/
-
 p {
     font-weight: 300;
     line-height: 30px;
@@ -117,10 +93,6 @@ p {
 
 .text-center {
     text-align: center;
-}
-
-.heading-padding {
-    padding-bottom: 40px;
 }
 
 section {
@@ -141,12 +113,14 @@ section {
     margin-left: auto;
 }
 
+/*
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
+*/
 
 .row {
     margin-right: -15px;
@@ -195,36 +169,38 @@ section {
     -o-background-size: cover;
     background-size: cover;
     /*background-repeat: no-repeat;*/
-    width: 100%;
+    height: 100%;
     display: block;
     height: auto;
     padding-top: 350px; /*spacer before main title logo*/
-    padding-bottom: 500px; /*spacer after main title logo*/
+    padding-bottom: 300px; /*spacer after main title logo*/
     color: #fff;
 }
 
 .head-main {
 	text-shadow: 2px 4px 5px rgba(0,0,0,.9);
 	font-variant: small-caps;
-	color: #fff;
-	letter-spacing: 5pt;
-	word-spacing: 21pt;
-	font-size: 4.5em;
+	color: rgba(216,218,255,.7);
+	letter-spacing: 3pt;
+	word-spacing: 10pt;
+	font-size: 4em;
 	text-align: left;
-	font-family: impact, sans-serif;
 	line-height: 2;
 	font-weight: 900;
-	border: 5px double #fff;
+	border: 5px double rgba(216,218,255,.5); /*This looks bad when the lines break, but I can't figure out a good alternative*/
 	padding: 10px;
 }
 
+/*
 .head-sub-main {
     font-size: 23px;
     font-weight: 500;
     padding: 50px 20px 10px 20px;
     text-transform: uppercase;
 }
+*/
 
+/*
 .head-last {
     font-size: 18px;
     font-weight: 900;
@@ -232,7 +208,11 @@ section {
     border: 1px dotted #fff;
     padding: 5px
 }
+*/
 
+#header {
+    background-color: rgba(100,65,0,.3);
+}
 /**************
     CONTACT
 ***************/
@@ -243,19 +223,16 @@ section {
     flex-wrap: wrap;
     padding: 10px;
     margin: 0px auto;
-    background: linear-gradient(rgba(161,45,6,.5), rgba(253,238,167,1));
+    background: linear-gradient(rgb(145,141,158), rgb(253,245,209));
 }
 
+/*
 .flex-container:hover {
     box-shadow: 5px 4px 10px 0 rgba(0,0,0,.5);
 }
-/*
-#contact {
-    background-color: #f5f3f3;
-    /*rgba(253,238,167,.15); for box around reservation
-    padding? margin? wtf is it? */
+*/
 
-.reservation {
+.RSVP {
     width: 80%;
     padding: 10px;
     border-radius: 8px;
@@ -265,30 +242,13 @@ section {
     
 }
 
-.reservation h2 {
-    /*width: 90%;*/
+.RSVP H2,
+.RSVP H3 {
+    color: rgba(77,42,79,1);
     text-align: center;
-    /*padding-bottom: 0px;*/
-    color: #29102e;
-    font-weight: 900;
-    font-size: 1.5em;
-    font-variant: small-caps;
-    letter-spacing: .4pt;
-    line-height: 1.25;
-    /*word-spacing: .0pt;*/
 }
 
-.reservation h3 {
-    /*width: 80%;*/
-    text-align: center;
-    /*padding-top: 0px;*/
-    color: #29102e;
-    font-weight: 600;
-    font-size: 1.25em;
-    font-variant: small-caps;
-}
-
-.reservation p {
+.RSVP p {
     /*width: 98%;*/
     font-size: 12px;
     text-align: center;
@@ -298,25 +258,23 @@ section {
     line-height: 1.25;
 }
 
-.reservation form {
-    font-size: 1px;
+/*
+.RSVP form {
+    font-size: 12px;
     outline: none;
     font-weight: 600;
-    /*color: #29102e;
-    /*color: #8d8e8f;*/
     padding: 2px 2px;
     width: 85%;
-    /*border: 1px solid #808080;*/
+    /*border: 1px solid #808080;*/    /*
     border: 1px solid;
     margin: 2% auto;
     border-radius: 7px;
     background: rgba(256,256,256,.1);
-    /*background: rgb(227,222,222);*/
     box-shadow: 4px 6px 6px 0px rgba(0,0,0,.6);
-    font-family: 'Raleway', sans-serif;
 }
+*/
 
-.reservation input[type="text"] {
+.RSVP input[type="text"] {
     font-size: 12px;
     outline: none;
     font-weight: 600;
@@ -334,12 +292,12 @@ section {
     margin: 10px 1em;
     border-radius: 7px;
     background: rgba(253,238,167,.0);
-    box-shadow: inset 0px 3px 0px rgba(161,45,6,.15);
+    box-shadow: inset 0px 3px 5px rgba(145,141,158,.7);
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input[type="text"]:hover {
-    box-shadow: 0 0 18px rgba(161,45,6,.5);
+.RSVP input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(145,141,158,.5);
 }
 
 .form-spacer {
@@ -362,7 +320,7 @@ section {
 }
 
 .terms:hover {
-    color: #730202;
+    color: #112F3B;
     text-decoration: underline;
 }
 
@@ -394,9 +352,9 @@ section {
     FOOTER
 **************/
 #footer {
-    background-color: rgba(100,65,0,.3);
+    background-color:rgba(253,245,209,1);
     color: #000;
     text-shadow: 2px 2px 8px 0 rgba(0,0,0,.4);
-    padding: 20px 50px 20px 50px; /*same as only 1st and 2nd?*/
+    padding: 20px 50px 20px 50px;
     text-align: right;
 }
