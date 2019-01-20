@@ -8,6 +8,18 @@ p {
     padding-bottom: 15px;
 }
 
+blockquote {
+    text-align: center;
+    font-style: italic;
+    color: #F2B33D;
+}
+
+caption {
+    text-align: center;
+    font-style: italic;
+    color: rgba(145,141,158,1);
+}
+
 .poster,
 .photo {
     position: relative;
@@ -65,8 +77,8 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     justify-content: center; 
     background: rgba(0,0,0,.5);
 }
