@@ -44,14 +44,14 @@ body {
     border-radius: 6px; 
     cursor: pointer;
     transition-property: background;
-    transition-duration: .4s;
+    transition-duration: .2s;
     transition-delay: 0s;
     transition-timing-function: ease-in-out;
 }
 
 .menu li:hover {
     color: #001A2F;
-    background: linear-gradient(rgba(145,141,158,.8), rgba(253,245,209,.8))
+    background: linear-gradient(rgba(145,141,158,.5), rgba(253,245,209,.3))
 }
 
 footer, 
@@ -100,11 +100,6 @@ section {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
-
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 .clearfix:after,
@@ -199,8 +194,8 @@ section {
 }
 
 .RSVP p {
-    /*width: 98%;*/
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
     text-align: center;
     color: #29102e;
     margin-bottom: 0;
@@ -223,7 +218,6 @@ section {
     border-radius: 7px;
     background: rgba(253,238,167,.0);
     box-shadow: inset 0px 3px 5px rgba(145,141,158,.7);
-    font-family: 'Raleway', sans-serif;
 }
 
 .RSVP input[type="text"]:hover {
@@ -241,7 +235,6 @@ section {
     line-height: 5px;
     color: #29102e;
     cursor: pointer;
-    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     position: relative;
     float: right;
@@ -250,16 +243,16 @@ section {
 .terms:hover {
     color: #112F3B;
     text-decoration: underline;
+    font-size: 14px;
 }
 
 .submit input[type="submit"] {
     color: rgba(77,42,79,1);
     cursor: pointer;
     border: none;
-    font-weight: 900;
+    font-weight: 700;
     outline: none;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
     margin: 0px 3%;
     padding: 7px 0px;
     width: 25%;
